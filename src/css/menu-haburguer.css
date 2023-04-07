@@ -61,7 +61,7 @@
 @media(max-width: 900px){
 
     .cabecalho .menu{
-        display: block;
+        display: flex;
     }
 
     .cabecalho .navegacao .menu-cabecalho {
@@ -74,7 +74,7 @@
 
     .cabecalho .navegacao {
         position: absolute;
-        top: 8px;
+        top: 32px;
         right: 20px;
         z-index: 1;
     }
