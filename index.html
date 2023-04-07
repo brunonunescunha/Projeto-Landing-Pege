@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/css/media.css">
+    <link rel="stylesheet" href="src/css/menu-haburguer.css">
 
     <title>Agência XPTO</title>
 </head>
@@ -22,16 +23,27 @@
 <body>
 
     <header class="cabecalho">
+        <div class="container">
         <a class="logo" href="">
             <img class="imagem" src="src/img/cafe.gif" alt="logo XPTO"> <span class="titulo">Agência XPTO</span></a>
 
         <nav class="navegacao">
-            <ul class="menu">
+
+            <input type="checkbox" id="menu-hamburguer">
+
+            <label for="menu-hamburguer">
+                <div class="menu">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+
+            <ul class="menu-cabecalho">
                 <li class="item"><a href="#projetos">Projetos</a></li>
                 <li class="item"><a href="#quem-somos">Quem Somos</a></li>
                 <li class="item"><a href="#contato">Contato</a></li>
             </ul>
         </nav>
+    </div>
     </header>
     <main class="conteudo-principal" id="projetos">
         <section class="paineis">

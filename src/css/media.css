@@ -13,11 +13,7 @@
     }
 }
 
-@media(max-width: 900px){
-    .conteudo-principal .paineis{
-        height: 500px;
-    }
-}
+
 
 @media(max-width: 940px){
     .rodape .navegacao{

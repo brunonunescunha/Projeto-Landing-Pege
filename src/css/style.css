@@ -6,14 +6,12 @@ body{
     width: 100px;
 }
 
-.cabecalho{
+.cabecalho .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 25px 0;
-    max-width: 1170px;
-    margin: 0 auto;
-    flex-wrap: wrap;
+    min-height: 75px;
 }
 
 .logo{
@@ -33,20 +31,19 @@ body{
     color: #1ed760;
 }
 
-.cabecalho .navegacao .menu{
+.cabecalho .navegacao .menu-cabecalho {
     display: flex;
-
 }
 
-.cabecalho .navegacao .menu .item{
+.cabecalho .navegacao .item{
     margin: 10px;
     
 }
-.cabecalho .navegacao .menu .item a {
+.cabecalho .navegacao .menu-cabecalho .item a {
     padding: 15px;
     transition: 0.3s ease-in-out;
 }
-.cabecalho .navegacao .menu .item a:hover{
+.cabecalho .navegacao .menu-cabecalho .item a:hover{
     background-color: #1ed760;
     color: #fff;
 }

@@ -1,0 +1,100 @@
+.cabecalho .menu{
+    display: none;
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
+}
+
+.cabecalho nav label{
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho .hamburguer{
+    background-color: #000000;
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 12px;
+    transition: 0.5s ease-in-out;
+}
+
+.cabecalho .hamburguer::before,
+.cabecalho .hamburguer::after{
+    background-color: #000000;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+
+.cabecalho .hamburguer::before{
+    top: -10px;
+}
+
+.cabecalho .hamburguer::after{
+    bottom: -10px;
+}
+
+.cabecalho input {
+    display: none;
+}
+
+.cabecalho input:checked ~ label .hamburguer{
+    transform: rotate(45deg);
+}
+
+.cabecalho input:checked ~ label .hamburguer::before{
+    transform: rotate(90deg);
+    top: 0;
+}
+
+.cabecalho input:checked ~ label .hamburguer::after{
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+@media(max-width: 900px){
+
+    .cabecalho .menu{
+        display: block;
+    }
+
+    .cabecalho .navegacao .menu-cabecalho {
+        display: none;
+    }
+
+    .cabecalho input:checked ~ .menu-cabecalho{
+        display: block;
+    }
+
+    .cabecalho .navegacao {
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        z-index: 1;
+    }
+
+    .cabecalho .navegacao .menu-cabecalho {
+        width: 200px;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 0 0 30px 30px;
+    }
+
+    .cabecalho .navegacao .menu-cabecalho .item a {
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .conteudo-principal .paineis{
+        height: 500px;
+    }
+
+
+}

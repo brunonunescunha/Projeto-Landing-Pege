@@ -54,18 +54,4 @@ function mostrarOuEsconderSetas() {
         setaAvancar.classList.remove("opacidade")
     }
 }
-// function mostrarOuEsconderSetas(){
-//     const naoEhPrimeiraImagem = imagemAtual !==0
-//     if(naoEhPrimeiraImagem){
-//         setaVoltar.classList.remove("opacidade")
-//     } else {
-//         setaVoltar.classList.add("opacidade")
-//     }
 
-//     const chegouNaUtimaImagem = imagemAtual !== 0 && imagemAtual === imagem.length - 1
-//     if(chegouNaUtimaImagem){
-//         setaAvancar.classList.add("opaciade")
-//     } else {
-//         setaAvancar.classList.remove("opacidade")
-//     }
-// }
